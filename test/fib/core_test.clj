@@ -5,8 +5,10 @@
 
 (defn- fib-seq
   []
-  (for [i (range)] (-> i inc fib)))
+  (map fib (range)))
 
 (deftest t-fib-seq
-  (is (= (take 100 (fib-seq))
-         (->> "fib.edn" io/resource slurp read-string (take 100)))))
+  (doseq [[a b x] (->> (fib-seq)
+                       (partition-all 3 1)
+                       (take 10000))]
+    (is (= x (+' a b)))))
