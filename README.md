@@ -4,9 +4,6 @@ Fast computation of Fibonacci numbers using the fast doubling method. This will
 calculate a Fibonacci number in O(1) space and O(log n) operations, with the
 fast doubling method being a constant factor faster than matrix exponentiation.
 
-https://en.wikipedia.org/wiki/Fibonacci_number
-https://www.nayuki.io/page/fast-fibonacci-algorithms
-
 ## Usage
 
 ``` clj
@@ -54,6 +51,11 @@ range of values.
 (take 10 (drop 10 (fib-seq)))
 ;; => (89 144 233 377 610 987 1597 2584 4181 6765)
 ```
+
+## Further Reading
+
+- https://en.wikipedia.org/wiki/Fibonacci_number
+- https://www.nayuki.io/page/fast-fibonacci-algorithms
 
 ## License
 
