@@ -1,4 +1,4 @@
-# fib
+# fib [![Circle CI](https://circleci.com/gh/jcf/fib.svg?style=svg)](https://circleci.com/gh/jcf/fib)
 
 Fast computation of Fibonacci numbers using the fast doubling method. This will
 calculate a Fibonacci number in O(1) space and O(log n) operations, with the
