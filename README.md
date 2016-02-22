@@ -42,7 +42,7 @@ number…
 
 You can also create a lazy sequence on top of `fib`.
 
-```
+``` clj
 (defn fib-seq
   []
   (for [i (range)] (-> i inc fib)))
