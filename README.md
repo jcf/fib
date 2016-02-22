@@ -40,8 +40,7 @@ number…
 
 ## A lazy sequence
 
-You can also create a lazy sequence on top of `fib` if you want a contigous
-range of values.
+You can also create a lazy sequence on top of `fib`.
 
 ```
 (defn fib-seq
